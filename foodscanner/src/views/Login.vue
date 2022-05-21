@@ -1,11 +1,10 @@
 <template>
-  <div class="row">
-    <div class="col-sm-1">
-      <img src="../assets/foodStock.jpg" width="1000"/>
+  <div>
+   <body class="m-0vh-100 row justify-content-center align-items-center">
+    <div class="col-auto bg-dangerp-5text-center">
+         CENTRAR DIV
     </div>
-    <div class="col-sm-6">
-     
-    </div>
+   </body>
   </div>
 </template>
 
@@ -15,6 +14,9 @@
 
 export default {
   name: 'LoginView',
+  metaInfo:{
+    title:"Login"
+  },
   components: {
 
   }
