@@ -44,7 +44,7 @@ export default {
     const user = localStorage.getItem('login');
     if(!user)
     {
-      var defaultEmail={email:'defaultEmail@example.com', password:'password', name:"defaultName", surnames:"defaultSurnames", username:"defaultUsername",gender:1,activity:2,mode:1,weight:73, height:1.76}
+      var defaultEmail={email:'defaultEmail@example.com', password:'password', name:"defaultName", surname:"defaultSurnames", username:"defaultUsername",gender:1,activity:2,mode:1,weight:73, height:1.76}
       var stringifiedLogin = JSON.stringify(defaultEmail);
       localStorage.setItem('defaultEmail', stringifiedLogin);
     }
@@ -61,7 +61,7 @@ export default {
         }
         else{
          this.error = 0;
-         console.log('Do the redirection');
+         this.$router.push();
       }
     }
   }
