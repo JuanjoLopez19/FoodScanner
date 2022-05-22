@@ -72,7 +72,6 @@
             <h3>Your routine for today: <strong>UpperBody</strong></h3>
             <b-carousel
               id="carousel-2"
-              v-model="slide2"
               :interval="4000"
               controls
               fade

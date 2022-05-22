@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import MainView from '../views/MainView.vue'
+import ProfileView from '../views/ProfileView.vue'
+import SettingsView from '../views/SettingsView.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,18 @@ const routes = [
     path: '/main',
     name: 'main',
     component: MainView,
+    props: true
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: ProfileView,
+    props: true
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: SettingsView,
     props: true
   }
 ]
