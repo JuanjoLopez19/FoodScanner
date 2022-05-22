@@ -123,7 +123,7 @@
                 <small>You are one step closer of your new life</small>
                 <div class="mb-6">
                     <b-button class="buttons" variant="outline-secondary"> <router-link :to="{ name: 'login' }"> Return to Log in </router-link></b-button>
-                    <b-button class="buttons" variant="outline-primary"><router-link :to="{ name: 'main' }"> Sign In</router-link></b-button>
+                    <b-button class="buttons" variant="outline-primary"><router-link :to="{ name: 'main', params:{user: userRegister} }"> Sign In</router-link></b-button>
                 </div>
           </div>
         </b-modal>
@@ -178,7 +178,7 @@ export default{
   margin-top: 10px;
 }
 .title {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 .form {
   margin: 3rem auto;

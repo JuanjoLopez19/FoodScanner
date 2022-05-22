@@ -61,7 +61,7 @@ export default {
         }
         else{
          this.error = 0;
-         this.$router.push();
+         this.$router.push({name: 'main', params:{user: parseduser}});
       }
     }
   }
