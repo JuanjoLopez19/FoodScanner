@@ -8,14 +8,14 @@
                     <div class="col right mt-2">
                         <div class="row">
                             <div class="col-7">
-                                <router-link :to="{ name: 'profile', params:{user: Person} }"> <b-img :src="require('../assets/Bench.jpg')" rounded="circle" alt="Circle image" height="60" width="60"></b-img> </router-link>
+                                 <b-img :src="require('../assets/Bench.jpg')" rounded="circle" alt="Circle image" height="60" width="60"></b-img> 
                             </div>
                             <div class="col-3">
-                               <router-link :to="{ name: 'profile', params:{user: Person} }"> <p class="NoLink">{{Person.username}}</p></router-link>
+                               <p class="NoLink">{{Person.username}}</p>
                                 <p style="margin-top:-20px"><b-icon icon="dot" style="width: 40px; height: 40px; margin-right: 10px;"/>Conected</p> <!-- Poner el color y las redirecciones-->
                             </div>
                             <div class="col-2">
-                                <router-link :to="{ name: 'settings', params:{user: Person} }"><b-icon icon="gear" class="NoLink" style="width: 40px; height: 40px; margin: 10px;"/></router-link>
+                                <b-icon icon="gear" class="NoLink" style="width: 40px; height: 40px; margin: 10px;"/>
                             </div>
                         </div>
                     </div>
@@ -30,11 +30,14 @@
             </div>
         </div>
         <div class="row mb-4">
-            <b-nav class="col" tabs align="center">
+            <p class="col-1">
+            </p>
+            <b-nav tabs align="center" class="col-10">
                 <b-nav-item id="nutri" @click="select=1">Nutrition</b-nav-item>
                 <b-nav-item id="exer" @click="select=2">Exercise</b-nav-item>
                 <b-nav-item id="fr" @click="select=3">Friends</b-nav-item>
             </b-nav>
+            <p class="col-1"></p>
         </div>
         <div class="row">
             <p class="col-1"></p>
@@ -65,10 +68,7 @@ export default {
     created(){
             this.Person = this.user
     },
-    mounted(){
-        const nutri= document.getElementById('nutri');
-        document.addEventListener(onclick,nutri)
-        console.log(nutri);
+    methods:{
     }
 
 }

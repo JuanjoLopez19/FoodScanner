@@ -67,11 +67,11 @@
           <div class="col" id="radiobutton">
             <div class="form-check form-check-inline">
               <input class="form-check-input" v-model="userRegister.gender" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" required>
-              <label class="form-check-label" for="inlineRadio1">Hombre</label>
+              <label class="form-check-label" for="inlineRadio1">Male</label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" v-model="userRegister.gender" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" required>
-              <label class="form-check-label" for="inlineRadio2"> Mujer</label>
+              <label class="form-check-label" for="inlineRadio2">Female</label>
             </div>
           </div>
           <div class="col">
