@@ -46,7 +46,7 @@
 
               <b-carousel-slide 
                 caption="MidAfternoon"
-                text="Greek yogurth, fruits and some kind of sugar free cereals"
+                text="Greek yogurht, fruits and some kind of sugar free cereals"
                 :img-src="require('../assets/merienda.jpg')"
               ></b-carousel-slide>
 
@@ -131,9 +131,12 @@ export default {
   },
   data: () =>({
     options: {
-      labels: ['Protein', 'Carbs', 'Fat']
+      labels: ['Protein', 'Carbs', 'Fat'],
+      title:{
+        text:"Macronutrients of the day"
+      }
     },
-    series: [30, 50, 20],
+    series: [40,50,10],
   }),
 }
 </script>
@@ -141,9 +144,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 hr {
-  height: 10px !important;
-  background-color: black !important;
-  color: black !important;
+  height: 10px ;
+  background-color: black ;
+  color: black ;
 
 }
 </style>

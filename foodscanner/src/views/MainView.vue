@@ -15,7 +15,7 @@
                                 <p style="margin-top:-20px"><b-icon icon="dot" style="width: 40px; height: 40px; margin-right: 10px;"/>Conected</p> <!-- Poner el color y las redirecciones-->
                             </div>
                             <div class="col-2">
-                                <b-icon icon="gear" class="NoLink" style="width: 40px; height: 40px; margin: 10px;"/>
+                                <router-link :to="{ name: 'login' }"> <b-icon icon="x-octagon-fill" class="NoLink" style="width: 40px; height: 40px; margin: 10px;" data-toggle="tooltip" title="Click here to close sesion"/> </router-link>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 position-sticky">
             <p class="col-1">
             </p>
             <b-nav tabs align="center" class="col-10">
@@ -42,9 +42,9 @@
         <div class="row">
             <p class="col-1"></p>
             <Main class="col-10" v-if="select==null"></Main>
-            <Nutrition class="col-10" v-if="select==1"></Nutrition>
+            <Nutrition :aux=Person class="col-10" v-if="select==1"></Nutrition>
             <Exercise class="col-10" v-if="select==2"></Exercise>
-            <Friends class="col-10" v-if="select==3"></Friends>
+            <Friends class="col-10" v-if="select==3" ></Friends>
             <p class="col-1"></p>
         </div>
   </div>
@@ -98,7 +98,7 @@ export default {
 
 .NoLink{
     text-decoration: none;
-    color: black;
+    color: black ;
     text-align: right;
 }
 

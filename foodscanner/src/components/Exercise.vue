@@ -32,7 +32,7 @@
             </b-form-group>
           </div>
           <div class="col">
-           <b-form-group label="Weigth" label-for="Exer-input">
+           <b-form-group label="Weight" label-for="Exer-input">
               <b-form-input v-model="wh" ></b-form-input>
             </b-form-group>
           </div>
@@ -141,7 +141,6 @@ export default {
           }
         } 
     }
-
   }
 
 }

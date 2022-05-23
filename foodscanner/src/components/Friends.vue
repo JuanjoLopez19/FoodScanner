@@ -42,7 +42,7 @@
                 <b-icon icon="twitter"  style="width: 25px; height: 25px; margin-left: 100px;"/>
               </div>
               <div class="col-4">
-                <b-icon icon="facebook"  style="width: 25px; height: 25px; margin-left: 100px;"/>
+                <b-icon icon="google"  style="width: 25px; height: 25px; margin-left: 100px;"/>
               </div>
             </div>
           </div>

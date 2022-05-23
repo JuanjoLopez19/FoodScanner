@@ -54,14 +54,18 @@ export default {
     login(){
         var strippedEmail = this.userLogin.email.split('@')
         const user = localStorage.getItem(strippedEmail[0]);
-        var parseduser = JSON.parse(user);
+        if(!user){
+            this.error = 1;
+        }
+        else
+        {var parseduser = JSON.parse(user);
         if(parseduser.email != this.userLogin.email || parseduser.password != this.userLogin.pwd)
         {
           this.error = 1;
         }
         else{
          this.error = 0;
-         this.$router.push({name: 'main', params:{user: parseduser}});
+         this.$router.push({name: 'main', params:{user: parseduser}});}
       }
     }
   }
